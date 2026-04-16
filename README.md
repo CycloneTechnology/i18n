@@ -16,7 +16,6 @@ https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml
 https://github.com/CycloneTechnology/i18n/releases
 )
 
-
 ---
 
 ### Semantic Versioning Rules (for your project)
