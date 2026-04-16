@@ -6,7 +6,7 @@ Internationalization for projects via Spring MessageSource.
 
 ## For Developers
 
-Current Build Status: https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg
+Current Status: ![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)
 
 Semantic Versioning Rules (for your project)
 
