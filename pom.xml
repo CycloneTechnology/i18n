@@ -10,7 +10,7 @@
 
   <groupId>com.cyclone.i18n</groupId>
   <artifactId>i18n-parent</artifactId>
-  <version>1.0.0</version>
+  <version>${revision}</version>
 
   <packaging>pom</packaging>
 
@@ -22,6 +22,8 @@
   </modules>
 
   <properties>
+    <revision>1.0.0-SNAPSHOT</revision>
+
     <java.version>22</java.version>
     <spring.boot.version>3.2.4</spring.boot.version>
     <maven.compiler.release>22</maven.compiler.release>
