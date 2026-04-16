@@ -3,7 +3,7 @@
   "name": "i18n",
   "private": true,
   "release": {
-    "branches": ["main"],
+    "branches": ["master"],
     "plugins": [
       [
         "@semantic-release/commit-analyzer",
