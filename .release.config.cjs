@@ -1,0 +1,19 @@
+
+module.exports = {
+  branches: ['master'],
+  plugins: [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
+    '@semantic-release/changelog',
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd:
+            'mvn versions:set -DnewVersion=${nextRelease.version} -DgenerateBackupPoms=false',
+        publishCmd: 'mvn clean deploy'
+      }
+    ],
+    '@semantic-release/git',
+    '@semantic-release/github'
+  ]
+};
