@@ -1,15 +1,18 @@
+
 name: Release
 
 on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "**/*.md"
 
 jobs:
   release:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      packages: write
 
     steps:
       - uses: actions/checkout@v4
@@ -20,20 +23,15 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+          cache: maven
 
-      - name: Determine version
-        id: version
-        run: |
-          CURRENT=$(git tag --sort=-v:refname | head -n 1 | sed 's/v//')
-          echo "current=$CURRENT" >> $GITHUB_OUTPUT
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Set Maven release version
-        run: |
-          mvn versions:set \
-            -DnewVersion=${{ steps.version.outputs.current }} \
-            -DgenerateBackupPoms=false
+      - run: npm ci
 
-      - name: Build and publish
-        run: mvn clean deploy
+      - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

@@ -1,3 +1,55 @@
 # 🌍 Cyclone I18n Parent
 
 Internationalization for projects via Spring MessageSource.
+
+---
+
+## For Developers
+
+Semantic Versioning Rules (for your project)
+
+MAJOR.MINOR.PATCH
+
+| Change type                     | Version bump | Examples                                      |
+|:--------------------------------| :--------------: |:----------------------------------------------|
+| Breaking API                    | MAJOR | Removing methods, changing config keys        |
+| Backward‑compatible new feature | MINOR | New APIs, new config options                  |
+| Bug fixes only                  | PATCH | Fixes, internal refactors                     |
+
+### Git Is the Source of Truth
+
+The version lives in Git, not Maven
+
+| Rules |                            |
+|:------|:---------------------------|
+| main branch | releasable |
+| Git tags | define releases |
+| CI | builds only tagged releases |
+
+---
+
+### Repository Branch Model
+
+| Branch | Use                 |
+|:-------|:--------------------|
+| main   | Stable, realeasable |
+| feature/* | Work in progress |
+| fix/* | Bug fixes           |
+
+---
+
+### Commit Message Format
+
+  - feat: add locale fallback support
+  - fix: correct ICU message parsing
+  - docs: improve README examples
+  - BREAKING CHANGE: changed message resolver API
+
+---
+
+### How versions are derived from commit messages
+| Commit content   |   Version bump    |                                                |
+|:-----------------|:-----------------:|:-----------------------------------------------|
+| fix              |       PATCH       | Bug fixes that do not affect the public API    |
+| feature          |       MINOR       | New features that are backwards compatible     |
+| BREAKING CHANGE  |       MAJOR       | Breaking changes that affect the public API    |
