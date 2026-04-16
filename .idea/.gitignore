@@ -10,3 +10,10 @@
 /dataSources.local.xml
 # Zeppelin ignored files
 /ZeppelinRemoteNotebooks/
+/compiler.xml
+/encodings.xml
+/jarRepositories.xml
+/material_theme_project_new.xml
+/misc.xml
+/vcs.xml
+/workspace.xml
