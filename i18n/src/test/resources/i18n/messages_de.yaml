@@ -1,0 +1,5 @@
+formatted.message: Hallo {0}, Sie haben {1} Punkte
+greeting: Hallo!
+nested:
+  message: Dies ist eine verschachtelte Nachricht
+welcome: Willkommen! Ihre Glückszahl ist ${lucky.number}

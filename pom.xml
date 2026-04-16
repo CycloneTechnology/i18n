@@ -1,0 +1,63 @@
+
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://maven.apache.org/POM/4.0.0
+    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.cyclone.i18n</groupId>
+  <artifactId>i18n-parent</artifactId>
+  <version>1.0.0</version>
+
+  <packaging>pom</packaging>
+
+  <name>i18n Parent and BOM</name>
+
+  <modules>
+    <module>i18n</module>
+    <module>i18n-spring-boot-starter</module>
+  </modules>
+
+  <properties>
+    <java.version>22</java.version>
+    <spring.boot.version>3.2.4</spring.boot.version>
+    <maven.compiler.release>22</maven.compiler.release>
+  </properties>
+
+  <!-- Import Spring Boot BOM -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring.boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- Your own managed dependencies -->
+      <dependency>
+        <groupId>com.cyclone.i18n</groupId>
+        <artifactId>i18n</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.cyclone.i18n</groupId>
+        <artifactId>i18n-spring-boot-starter</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/CycloneTechnology/i18n</url>
+    </repository>
+  </distributionManagement>
+
+</project>

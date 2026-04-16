@@ -1,0 +1,3 @@
+greeting: "Bonjour!"
+welcome: "Bienvenue ! Votre numéro chanceux est ${lucky.number}"
+456: "Message clé numérique"
