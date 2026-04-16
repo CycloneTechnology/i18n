@@ -8,9 +8,14 @@ Internationalization for projects via Spring MessageSource.
 
 Current Status:
 
-![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)
+[![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)](
+https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml
+)
 
-![Release](https://github.com/CycloneTechnology/i18n/actions/workflows/release.yml/badge.svg)
+[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag)](
+https://github.com/CycloneTechnology/i18n/releases
+)
+
 
 ---
 
