@@ -32,7 +32,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx semantic-release
+      - run: npx semantic-release --branches master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
