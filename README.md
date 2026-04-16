@@ -12,9 +12,9 @@ Current Status:
 https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml
 )
 
-[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag)](
-https://github.com/CycloneTechnology/i18n/releases
-)
+[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag&cache_seconds=300)]
+(https://github.com/CycloneTechnology/i18n/releases)
+
 
 ---
 
