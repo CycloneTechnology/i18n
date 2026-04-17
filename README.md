@@ -13,7 +13,16 @@
 
 Internationalization for projects via Spring MessageSource.
 
----
+
+## Modules
+
+- **i18n** – Core internationalisation library (framework‑agnostic)
+- **i18n‑spring‑boot‑starter** – Auto‑configuration and integration for Spring Boot
+
+## Getting Started
+
+- Core library usage → https://github.com/CycloneTechnology/i18n/tree/master/i18n#readme
+- Spring Boot starter → https://github.com/CycloneTechnology/i18n/tree/master/i18n-spring-boot-starter#readme
 
 ## For Developers
 
