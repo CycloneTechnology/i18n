@@ -1,8 +1,8 @@
-# 🌍 Spring I18n Starter
+# 🌍 Cyclone I18n Core library
 
 A Spring Boot 3.1 library for internationalization using YAML message files. 
 Supports deeply nested keys, numeric identifiers, runtime interpolation, and automatic locale 
-fallback — all wired seamlessly into Spring’s `MessageSource`.
+fallback — all wired into Spring’s `MessageSource`.
 
 ---
 
