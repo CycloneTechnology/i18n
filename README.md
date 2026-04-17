@@ -1,7 +1,7 @@
 # 🌍 Cyclone Technology I18n
 
 
-[![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/CycloneTechnology/i18n/build.yml?style=for-the-badge)](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml)
 
 [![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag&style=for-the-badge&cache_seconds=300)](https://github.com/CycloneTechnology/i18n/releases)
 
