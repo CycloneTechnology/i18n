@@ -3,7 +3,7 @@
 
 [![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml)
 
-[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag&style=for-the-badge&include_prereleases=true&cache_seconds=300)](https://github.com/CycloneTechnology/i18n/releases)
+[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag&style=for-the-badge&cache_seconds=300)](https://github.com/CycloneTechnology/i18n/releases)
 
 [![Maven](https://img.shields.io/badge/maven-GitHub%20Packages-blue)](https://github.com/CycloneTechnology/i18n/packages)
 
