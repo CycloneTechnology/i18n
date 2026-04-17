@@ -1,65 +1,95 @@
-
-<project
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
     http://maven.apache.org/POM/4.0.0
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.cyclone.i18n</groupId>
-  <artifactId>i18n-parent</artifactId>
-  <version>1.0.0</version>
+    <groupId>com.cyclone.i18n</groupId>
+    <artifactId>i18n-parent</artifactId>
+    <version>1.0.0</version>
 
-  <packaging>pom</packaging>
+    <packaging>pom</packaging>
 
-  <name>i18n Parent and BOM</name>
+    <name>i18n Parent and BOM</name>
 
-  <modules>
-    <module>i18n</module>
-    <module>i18n-spring-boot-starter</module>
-  </modules>
+    <modules>
+        <module>i18n</module>
+        <module>i18n-spring-boot-starter</module>
+    </modules>
 
-  <properties>
-    <revision>0.0.0-SNAPSHOT</revision>
+    <properties>
+        <revision>0.0.0-SNAPSHOT</revision>
 
-    <java.version>22</java.version>
-    <spring.boot.version>3.2.4</spring.boot.version>
-    <maven.compiler.release>22</maven.compiler.release>
-  </properties>
+        <java.version>23</java.version>
+        <spring.boot.version>3.2.4</spring.boot.version>
+        <maven.compiler.release>23</maven.compiler.release>
 
-  <!-- Import Spring Boot BOM -->
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring.boot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
+        <lombok.version>1.18.44</lombok.version>
+    </properties>
 
-      <!-- Your own managed dependencies -->
-      <dependency>
-        <groupId>com.cyclone.i18n</groupId>
-        <artifactId>i18n</artifactId>
-        <version>${project.version}</version>
-      </dependency>
+    <!-- Import Spring Boot BOM -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
-      <dependency>
-        <groupId>com.cyclone.i18n</groupId>
-        <artifactId>i18n-spring-boot-starter</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+            <!-- Your own managed dependencies -->
+            <dependency>
+                <groupId>com.cyclone.i18n</groupId>
+                <artifactId>i18n</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
-  <distributionManagement>
-    <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/CycloneTechnology/i18n</url>
-    </repository>
-  </distributionManagement>
+            <dependency>
+                <groupId>com.cyclone.i18n</groupId>
+                <artifactId>i18n-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/CycloneTechnology/i18n</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                    <configuration>
+                        <release>${maven.compiler.release}</release>
+                        <annotationProcessorPaths>
+                            <path>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </path>
+                        </annotationProcessorPaths>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
