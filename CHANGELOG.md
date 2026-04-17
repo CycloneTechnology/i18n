@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/CycloneTechnology/i18n/compare/v2.0.0...v2.0.1) (2026-04-17)
+
+
+### Bug Fixes
+
+* Miscellaneous tidy up of docs and code ([8351fe2](https://github.com/CycloneTechnology/i18n/commit/8351fe20a6f783f83baa097be3880132609b4c8a))
+
 # [2.0.0](https://github.com/CycloneTechnology/i18n/compare/v1.0.0...v2.0.0) (2026-04-17)
 
 
