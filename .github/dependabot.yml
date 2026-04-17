@@ -1,0 +1,20 @@
+
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+      - automated
+    ignore:
+      # Do not auto-update Java / Spring baseline aggressively
+      - dependency-name: "org.springframework.boot:*"
+      - dependency-name: "org.springframework:*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
