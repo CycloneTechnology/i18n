@@ -1,4 +1,15 @@
-# 🌍 Cyclone I18n Parent
+# 🌍 Cyclone Technology I18n
+
+
+[![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml)
+
+[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag&include_prereleases=true&cache_seconds=300)](https://github.com/CycloneTechnology/i18n/releases)
+
+[![Maven](https://img.shields.io/badge/maven-GitHub%20Packages-blue)](https://github.com/CycloneTechnology/i18n/packages)
+
+[![Java](https://img.shields.io/badge/Java-17%2B-blue)](https://adoptium.net/)
+
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)](https://spring.io/projects/spring-boot)
 
 Internationalization for projects via Spring MessageSource.
 
@@ -7,10 +18,6 @@ Internationalization for projects via Spring MessageSource.
 ## For Developers
 
 Current Status:
-
-[![Build](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml/badge.svg)](https://github.com/CycloneTechnology/i18n/actions/workflows/build.yml)
-
-[![Release](https://img.shields.io/github/v/release/CycloneTechnology/i18n?display_name=tag&cache_seconds=300)](https://github.com/CycloneTechnology/i18n/releases)
 
 ---
 
