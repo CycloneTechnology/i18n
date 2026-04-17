@@ -121,3 +121,6 @@ The library will:
 - Register a  bean
 - Handle fallback and interpolation
 
+Easy integration by depending on the Spring Boot starter
+
+- Spring Boot starter → https://github.com/CycloneTechnology/i18n/tree/master/i18n-spring-boot-starter#readme
