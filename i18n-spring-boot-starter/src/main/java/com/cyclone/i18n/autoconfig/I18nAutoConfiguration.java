@@ -21,7 +21,7 @@ public class I18nAutoConfiguration {
     }
 
     @Bean
-    public I18nMessageSourceBridge i18nMessageSourceBridge() {
+    I18nMessageSourceBridge i18nMessageSourceBridge() {
         return new I18nMessageSourceBridge();
     }
 }
