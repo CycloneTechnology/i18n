@@ -37,31 +37,31 @@ Current Status:
 
 MAJOR.MINOR.PATCH
 
-| Change type                     | Version bump | Examples                                      |
-|:--------------------------------| :--------------: |:----------------------------------------------|
-| Breaking API                    | MAJOR | Removing methods, changing config keys        |
-| Backward‑compatible new feature | MINOR | New APIs, new config options                  |
-| Bug fixes only                  | PATCH | Fixes, internal refactors                     |
+| Change type                     | Version bump | Examples                               |
+|:--------------------------------|:------------:|:---------------------------------------|
+| Breaking API                    |    MAJOR     | Removing methods, changing config keys |
+| Backward‑compatible new feature |    MINOR     | New APIs, new config options           |
+| Bug fixes only                  |    PATCH     | Fixes, internal refactors              |
 
 ### Git Is the Source of Truth
 
 The version lives in Git, not Maven
 
-| Rules |                            |
-|:------|:---------------------------|
-| main branch | releasable |
-| Git tags | define releases |
-| CI | builds only tagged releases |
+| Rules       |                             |
+|:------------|:----------------------------|
+| main branch | releasable                  |
+| Git tags    | define releases             |
+| CI          | builds only tagged releases |
 
 ---
 
 ### Repository Branch Model
 
-| Branch | Use                 |
-|:-------|:--------------------|
-| main   | Stable, realeasable |
-| feature/* | Work in progress |
-| fix/* | Bug fixes           |
+| Branch    | Use                 |
+|:----------|:--------------------|
+| main      | Stable, realeasable |
+| feature/* | Work in progress    |
+| fix/*     | Bug fixes           |
 
 ---
 

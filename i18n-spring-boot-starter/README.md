@@ -1,4 +1,4 @@
-# 🌍 Cyclone i18n - Spring Starter
+# 🌍 Cyclone i18n – Spring Starter
 
 A Spring Boot 3.x auto‑configuration starter for internationalisation using **YAML‑based message files**.
 

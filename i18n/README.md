@@ -9,7 +9,7 @@ fallback — all wired into Spring’s `MessageSource`.
 ## 🚀 Features
 
 - ✅ Loads all YAML files matching `**/*_{locale}.yaml` inside `/i18n` or below
-- ✅ Loads yaml files without locale and uses them as common fallback across all locales
+- ✅ Loads YAML files without a locale and uses them as common fallback across all locales
 - ✅ Supports nested keys and numeric values (e.g. `error.404.message`)
 - ✅ Late interpolation using `${some.key}` resolved dynamically across bundles
 - ✅ interpolation also uses locale and common fallback
@@ -118,7 +118,7 @@ The library will:
 
 - Automatically scan all YAML files in and below the i189n resources folder
 - Flatten nested keys into dot notation
-- Register a  bean
+- Register a bean
 - Handle fallback and interpolation
 
 Easy integration by depending on the Spring Boot starter
