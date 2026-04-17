@@ -13,6 +13,9 @@
 
 Internationalization for projects via Spring MessageSource.
 
+## License
+
+This project is licensed under the MIT License.
 
 ## Modules
 

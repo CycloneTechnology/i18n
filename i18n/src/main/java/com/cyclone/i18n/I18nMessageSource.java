@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 package com.cyclone.i18n;
 
 import lombok.extern.slf4j.Slf4j;

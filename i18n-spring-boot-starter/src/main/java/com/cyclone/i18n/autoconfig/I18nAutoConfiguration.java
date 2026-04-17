@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 package com.cyclone.i18n.autoconfig;
 
 import com.cyclone.i18n.I18n;
