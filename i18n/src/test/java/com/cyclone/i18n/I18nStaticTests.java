@@ -3,7 +3,8 @@
 package com.cyclone.i18n;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 
@@ -14,19 +15,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Slf4j
 class I18nStaticTests {
-    @SuppressWarnings("WriteOnlyObject")
-    private static final I18n i18n = new I18n();
 
     private void logTestInfo(TestInfo testInfo) {
         log.info("{}",
-                testInfo.getTestMethod().map(Method::getName).orElse("<unknown Method>"));
+                testInfo.getTestMethod()
+                        .map(Method::getName)
+                        .orElse("<unknown method>"));
     }
 
-    @BeforeAll
-    static void setup() {
+    @BeforeEach
+    void setup() {
         String basePath = "i18n";
         String defaultLocale = "en";
-        i18n.setMessageSource(new I18nMessageSource(basePath, defaultLocale));
+
+        I18n.initialize(new I18nMessageSource(basePath, defaultLocale));
+    }
+
+    @AfterEach
+    void tearDown() {
+        I18n.resetForTests();
     }
 
     @Test

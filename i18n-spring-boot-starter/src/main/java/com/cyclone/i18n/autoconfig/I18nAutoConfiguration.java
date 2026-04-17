@@ -2,7 +2,6 @@
 
 package com.cyclone.i18n.autoconfig;
 
-import com.cyclone.i18n.I18n;
 import com.cyclone.i18n.I18nMessageSource;
 import com.cyclone.i18n.config.I18nProperties;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
@@ -22,7 +21,7 @@ public class I18nAutoConfiguration {
     }
 
     @Bean
-    public I18n i18n() {
-        return new I18n();
+    public I18nMessageSourceBridge i18nMessageSourceBridge() {
+        return new I18nMessageSourceBridge();
     }
 }

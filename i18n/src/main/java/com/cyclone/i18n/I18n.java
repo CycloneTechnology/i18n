@@ -2,25 +2,42 @@
 
 package com.cyclone.i18n;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import org.springframework.context.MessageSource;
 import org.springframework.context.MessageSourceAware;
 
 import java.util.Locale;
+import java.util.Objects;
 
-public class I18n implements MessageSourceAware {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class I18n {
 
     private static MessageSource messageSource;
 
-    @Override
-    public void setMessageSource(@NonNull MessageSource messageSource) {
-        I18n.messageSource = messageSource;
+    public static synchronized void initialize(MessageSource source) {
+        if (messageSource != null) {
+            throw new IllegalStateException("MessageSource already initialized");
+        }
+        messageSource = Objects.requireNonNull(source);
+    }
+
+    static void resetForTests() {
+        messageSource = null;
+    }
+
+    private static MessageSource source() {
+        if (messageSource == null) {
+            throw new IllegalStateException("I18n MessageSource not initialized");
+        }
+        return messageSource;
     }
 
     public static String get(String code, String defaultMessage, Locale locale, Object... args) {
         String content;
         try {
-            content = messageSource.getMessage(code, args, locale);
+            content = source().getMessage(code, args, locale);
         } catch (Exception _) {
             content = defaultMessage;
         }
