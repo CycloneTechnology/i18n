@@ -14,7 +14,7 @@ Current Status:
 
 ---
 
-### Semantic Versioning Rules (for your project)
+### Semantic Versioning Rules
 
 MAJOR.MINOR.PATCH
 
