@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/CycloneTechnology/i18n/compare/v1.0.0...v2.0.0) (2026-04-17)
+
+
+* fix!: restore backward compatibility ([10038c3](https://github.com/CycloneTechnology/i18n/commit/10038c39ca7f2bae3f70e0030a415c7bf52308f9))
+
+
+### BREAKING CHANGES
+
+* previous release introduced an incompatible API change
+
 # 1.0.0 (2026-04-16)
 
 
