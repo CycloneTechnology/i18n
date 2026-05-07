@@ -9,6 +9,10 @@ updates:
     labels:
       - dependencies
       - automated
+      
+    commit-message:
+      prefix: "fix(deps)"
+
     ignore:
       # Do not auto-update Java / Spring baseline aggressively
       - dependency-name: "org.springframework.boot:*"
@@ -18,3 +22,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+    commit-message:
+      prefix: "fix(ci)"
