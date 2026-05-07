@@ -116,7 +116,7 @@ following the naming format `any_name.yaml`.
 
 The library will:
 
-- Automatically scan all YAML files in and below the i189n resources folder
+- Automatically scan all YAML files in and below the i18n resources folder
 - Flatten nested keys into dot notation
 - Register a bean
 - Handle fallback and interpolation
