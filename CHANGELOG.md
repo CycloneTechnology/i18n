@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/CycloneTechnology/i18n/compare/v2.0.1...v2.0.2) (2026-08-30)
+
+
+### Bug Fixes
+
+* **ci:** bump actions/setup-java from 5 to 6 ([bda1394](https://github.com/CycloneTechnology/i18n/commit/bda1394c48c41d6e9f4e7837f4a3853ff3f23a5d))
+
 ## [2.0.1](https://github.com/CycloneTechnology/i18n/compare/v2.0.0...v2.0.1) (2026-04-17)
 
 
