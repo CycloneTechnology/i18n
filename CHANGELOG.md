@@ -1,3 +1,11 @@
+## [2.0.3](https://github.com/CycloneTechnology/i18n/compare/v2.0.2...v2.0.3) (2026-08-30)
+
+
+### Bug Fixes
+
+* **ci:** bump actions/checkout from 6 to 7 ([d3a66ae](https://github.com/CycloneTechnology/i18n/commit/d3a66ae3543a6fb9486b0a0e105ab782996a4a01))
+* **ci:** bump actions/setup-node from 6 to 7 ([d893114](https://github.com/CycloneTechnology/i18n/commit/d89311404e50ef6c1ed1f040cce8c953ff5c25b4))
+
 ## [2.0.2](https://github.com/CycloneTechnology/i18n/compare/v2.0.1...v2.0.2) (2026-08-30)
 
 
